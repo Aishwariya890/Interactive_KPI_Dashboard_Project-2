@@ -1,0 +1,13 @@
+Interactive_KPI_Dashboard
+│
+├── Dashboard
+│   ├── Retail_KPI_Dashboard.pdf
+│   └── PowerBI_DAX_Measures.txt
+│
+├── Data
+│   └── clean_dataset.csv
+│
+├── app.py
+├── README.md
+├── requirements.txt
+└── run.bat

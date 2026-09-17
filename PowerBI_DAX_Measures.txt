@@ -1,0 +1,13 @@
+Total Revenue = SUM('clean_dataset'[total_sales])
+
+Total Orders = DISTINCTCOUNT('clean_dataset'[invoiceno])
+
+Total Quantity = SUM('clean_dataset'[quantity])
+
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+
+Total Customers =
+CALCULATE(
+    DISTINCTCOUNT('clean_dataset'[customerid]),
+    'clean_dataset'[customerid] <> 0
+)
